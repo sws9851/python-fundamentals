@@ -1,21 +1,12 @@
-"""User Configuration Manager.
+"""Manage user settings such as theme, language, and notifications.
 
-Manage user settings such as theme, language, and notifications.
-Built while working through the freeCodeCamp Scientific Computing with Python
-certification.
+Note: each function both mutates the dictionary and returns a display string.
+The lab spec requires this, but the two jobs would normally be separated.
 """
 
 
 def add_setting(settings: dict, setting: tuple) -> str:
-    """Add a new setting if the key does not already exist.
-
-    Args:
-        settings: The dictionary of current settings (modified in place).
-        setting: A (key, value) tuple to add.
-
-    Returns:
-        A status message describing the outcome.
-    """
+    """Add a new setting, unless the key is already taken."""
     key, value = setting
     key, value = key.lower(), value.lower()
 
@@ -27,15 +18,7 @@ def add_setting(settings: dict, setting: tuple) -> str:
 
 
 def update_setting(settings: dict, setting: tuple) -> str:
-    """Update the value of an existing setting.
-
-    Args:
-        settings: The dictionary of current settings (modified in place).
-        setting: A (key, value) tuple to update.
-
-    Returns:
-        A status message describing the outcome.
-    """
+    """Change the value of a setting that already exists."""
     key, value = setting
     key, value = key.lower(), value.lower()
 
@@ -47,15 +30,7 @@ def update_setting(settings: dict, setting: tuple) -> str:
 
 
 def delete_setting(settings: dict, key: str) -> str:
-    """Remove a setting by key.
-
-    Args:
-        settings: The dictionary of current settings (modified in place).
-        key: The setting name to remove.
-
-    Returns:
-        A status message describing the outcome.
-    """
+    """Remove a setting by key."""
     key = key.lower()
 
     if key not in settings:
@@ -66,14 +41,7 @@ def delete_setting(settings: dict, key: str) -> str:
 
 
 def view_settings(settings: dict) -> str:
-    """Return a formatted display of all current settings.
-
-    Args:
-        settings: The dictionary of current settings.
-
-    Returns:
-        A newline-separated listing, or a notice if there are no settings.
-    """
+    """List every setting, one per line, with keys capitalised."""
     if not settings:
         return "No settings available."
 
