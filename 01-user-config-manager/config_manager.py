@@ -1,0 +1,91 @@
+"""User Configuration Manager.
+
+Manage user settings such as theme, language, and notifications.
+Built while working through the freeCodeCamp Scientific Computing with Python
+certification.
+"""
+
+
+def add_setting(settings: dict, setting: tuple) -> str:
+    """Add a new setting if the key does not already exist.
+
+    Args:
+        settings: The dictionary of current settings (modified in place).
+        setting: A (key, value) tuple to add.
+
+    Returns:
+        A status message describing the outcome.
+    """
+    key, value = setting
+    key, value = key.lower(), value.lower()
+
+    if key in settings:
+        return f"Setting '{key}' already exists! Cannot add a new setting with this name."
+
+    settings[key] = value
+    return f"Setting '{key}' added with value '{value}' successfully!"
+
+
+def update_setting(settings: dict, setting: tuple) -> str:
+    """Update the value of an existing setting.
+
+    Args:
+        settings: The dictionary of current settings (modified in place).
+        setting: A (key, value) tuple to update.
+
+    Returns:
+        A status message describing the outcome.
+    """
+    key, value = setting
+    key, value = key.lower(), value.lower()
+
+    if key not in settings:
+        return f"Setting '{key}' does not exist! Cannot update a non-existing setting."
+
+    settings[key] = value
+    return f"Setting '{key}' updated to '{value}' successfully!"
+
+
+def delete_setting(settings: dict, key: str) -> str:
+    """Remove a setting by key.
+
+    Args:
+        settings: The dictionary of current settings (modified in place).
+        key: The setting name to remove.
+
+    Returns:
+        A status message describing the outcome.
+    """
+    key = key.lower()
+
+    if key not in settings:
+        return "Setting not found!"
+
+    del settings[key]
+    return f"Setting '{key}' deleted successfully!"
+
+
+def view_settings(settings: dict) -> str:
+    """Return a formatted display of all current settings.
+
+    Args:
+        settings: The dictionary of current settings.
+
+    Returns:
+        A newline-separated listing, or a notice if there are no settings.
+    """
+    if not settings:
+        return "No settings available."
+
+    lines = [f"{key.capitalize()}: {value}" for key, value in settings.items()]
+    return "Current User Settings:\n" + "\n".join(lines) + "\n"
+
+
+test_settings = {"theme": "dark", "language": "en", "notifications": "enabled"}
+
+
+if __name__ == "__main__":
+    print(add_setting(test_settings, ("Volume", "High")))
+    print(update_setting(test_settings, ("Volume", "Low")))
+    print(delete_setting(test_settings, "Volume"))
+    print(view_settings(test_settings))
