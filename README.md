@@ -12,11 +12,13 @@ lives in a separate `ml-portfolio` repository.
 | # | Exercise | Concepts practised |
 |---|---|---|
 | 01 | [User Configuration Manager](./01-user-config-manager) | Dictionaries, tuples, string formatting, function design |
+| 02 | [Email Simulator](./02-email-simulator) | Classes, composition, dunder methods, type hints |
 
 ## Running
 
 ```bash
 python 01-user-config-manager/config_manager.py
+python 02-email-simulator/email_simulator.py
 ```
 
 Requires Python 3.9+. No external dependencies.
