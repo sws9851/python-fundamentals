@@ -13,12 +13,14 @@ lives in a separate `ml-portfolio` repository.
 |---|---|---|
 | 01 | [User Configuration Manager](./01-user-config-manager) | Dictionaries, tuples, string formatting, function design |
 | 02 | [Email Simulator](./02-email-simulator) | Classes, composition, dunder methods, type hints |
+| 03 | [Budget App](./03-budget-app) | Format specs, text layout, building strings with join |
 
 ## Running
 
 ```bash
 python 01-user-config-manager/config_manager.py
 python 02-email-simulator/email_simulator.py
+python 03-budget-app/budget.py
 ```
 
 Requires Python 3.9+. No external dependencies.
