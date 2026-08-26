@@ -16,6 +16,7 @@ lives in a separate `ml-portfolio` repository.
 | 03 | [Budget App](./03-budget-app) | Format specs, text layout, building strings with join |
 | 04 | [Discount Calculator](./04-discount-calculator) | Abstract base classes, strategy pattern, polymorphism |
 | 05 | [Media Catalogue](./05-media-catalogue) | Inheritance, super(), custom exceptions, type vs isinstance |
+| 06 | [Shape Calculator](./06-shape-calculator) | Subclassing, method overriding, integer division |
 
 ## Running
 
@@ -25,6 +26,7 @@ python 02-email-simulator/email_simulator.py
 python 03-budget-app/budget.py
 python 04-discount-calculator/discounts.py
 python 05-media-catalogue/catalogue.py
+python 06-shape-calculator/shape_calculator.py
 ```
 
 Requires Python 3.9+. No external dependencies.
