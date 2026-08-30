@@ -19,6 +19,7 @@ lives in a separate `ml-portfolio` repository.
 | 06 | [Shape Calculator](./06-shape-calculator) | Subclassing, method overriding, integer division |
 | 07 | [Linked List](./07-linked-list) | Nested classes, pointers, generators, time complexity |
 | 08 | [Hash Table](./08-hash-table) | Hashing, collision handling, nested dictionaries |
+| 09 | [Bisection Method](./09-bisection-method) | Numerical methods, convergence, tolerance, interval bracketing |
 
 ## Running
 
@@ -31,6 +32,7 @@ python 05-media-catalogue/catalogue.py
 python 06-shape-calculator/shape_calculator.py
 python 07-linked-list/linked_list.py
 python 08-hash-table/hash_table.py
+python 09-bisection-method/bisection.py
 ```
 
 Requires Python 3.9+. No external dependencies.
