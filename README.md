@@ -20,6 +20,9 @@ lives in a separate `ml-portfolio` repository.
 | 07 | [Linked List](./07-linked-list) | Nested classes, pointers, generators, time complexity |
 | 08 | [Hash Table](./08-hash-table) | Hashing, collision handling, nested dictionaries |
 | 09 | [Bisection Method](./09-bisection-method) | Numerical methods, convergence, tolerance, interval bracketing |
+| 10 | [Quicksort](./10-quicksort) | Divide and conquer, three-way partitioning, pivot choice |
+| 11 | [Luhn Algorithm](./11-luhn-algorithm) | String slicing, checksums, modular arithmetic |
+| 12 | [Tower of Hanoi](./12-tower-of-hanoi) | Recursion, closures, exponential move counts |
 
 ## Running
 
@@ -33,6 +36,9 @@ python 06-shape-calculator/shape_calculator.py
 python 07-linked-list/linked_list.py
 python 08-hash-table/hash_table.py
 python 09-bisection-method/bisection.py
+python 10-quicksort/quicksort.py
+python 11-luhn-algorithm/luhn.py
+python 12-tower-of-hanoi/hanoi.py
 ```
 
 Requires Python 3.9+. No external dependencies.
