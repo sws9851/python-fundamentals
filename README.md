@@ -23,6 +23,7 @@ lives in a separate `ml-portfolio` repository.
 | 10 | [Quicksort](./10-quicksort) | Divide and conquer, three-way partitioning, pivot choice |
 | 11 | [Luhn Algorithm](./11-luhn-algorithm) | String slicing, checksums, modular arithmetic |
 | 12 | [Tower of Hanoi](./12-tower-of-hanoi) | Recursion, closures, exponential move counts |
+| 13 | [Shortest Path](./13-shortest-path) | Graphs, Dijkstra, adjacency matrices, path reconstruction |
 
 ## Running
 
@@ -39,6 +40,7 @@ python 09-bisection-method/bisection.py
 python 10-quicksort/quicksort.py
 python 11-luhn-algorithm/luhn.py
 python 12-tower-of-hanoi/hanoi.py
+python 13-shortest-path/shortest_path.py
 ```
 
 Requires Python 3.9+. No external dependencies.
