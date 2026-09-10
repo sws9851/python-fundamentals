@@ -25,6 +25,7 @@ lives in a separate `ml-portfolio` repository.
 | 12 | [Tower of Hanoi](./12-tower-of-hanoi) | Recursion, closures, exponential move counts |
 | 13 | [Shortest Path](./13-shortest-path) | Graphs, Dijkstra, adjacency matrices, path reconstruction |
 | 14 | [Depth-First Search](./14-depth-first-search) | Stacks, graph traversal, set lookups for speed |
+| 15 | [N-Queens](./15-n-queens) | Backtracking, constraint pruning, set membership |
 
 ## Running
 
@@ -43,6 +44,7 @@ python 11-luhn-algorithm/luhn.py
 python 12-tower-of-hanoi/hanoi.py
 python 13-shortest-path/shortest_path.py
 python 14-depth-first-search/dfs.py
+python 15-n-queens/n_queens.py
 ```
 
 Requires Python 3.9+. No external dependencies.
