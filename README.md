@@ -51,4 +51,7 @@ Requires Python 3.9+. No external dependencies.
 
 ## Progress log
 
+## Progress log
+
 - **Aug 2026** — Started Phase 0: Python fundamentals
+- **Sep 2026** — Completed the freeCodeCamp [Scientific Computing with Python certification](https://www.freecodecamp.org/certification/samir-wael-samir-mohamed/python-v9)
